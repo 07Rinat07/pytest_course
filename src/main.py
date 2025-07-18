@@ -1,9 +1,12 @@
+from typing import Union
+
+
 class Calculator:
-    pass
+    def divide(self, x: Union[int, float], y: Union[int, float]) -> int | float:
+        return x / y
+    def add(self, x: Union[int, float], y: Union[int, float]) -> int | float:
+        return x + y
 
 
-from src.main import Calculator
-
-def test_division():
-    calculator = Calculator()
-    assert calculator.divide(3, "2") == 1.5
+if __name__ == "__main__":
+    calculator = Calculator

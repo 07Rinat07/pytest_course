@@ -1,9 +1,8 @@
-def test_sum():
-    x = 1
-    y = 2
-    assert x + y == 3
 
-def test_division():
+from src.main import Calculator
+
+def test_divide():
     x = 1
     y = 2
-    assert x / y == 0.5
+    res = 0.5
+    assert Calculator() .divide(x, y) == res
